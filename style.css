@@ -1,0 +1,107 @@
+/* General body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #282c34;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+}
+
+/* Center the info display */
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #444;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.info span {
+    font-size: 1.2em;
+    color: #ffd700;
+    margin-right: 15px;
+}
+
+/* Center the canvas and make it more modern */
+canvas {
+    background-color: #222;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+/* Add a modern button style */
+button#startGame {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button hover effect */
+button#startGame:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Add a click effect */
+button#startGame:active {
+    transform: scale(0.95);
+}
+
+/* Style for game history */
+#gameHistory {
+    max-width: 60%;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 10px;
+    color: #f0f0f0;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* History text styles */
+#gameHistory h3 {
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+#gameHistory p {
+    font-size: 1em;
+    padding: 5px 0;
+    border-bottom: 1px solid #444;
+}
+
+/* Adjusting for responsiveness */
+@media (max-width: 768px) {
+    .info {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    canvas {
+        width: 80%;
+        height: auto;
+    }
+
+    #gameHistory {
+        width: 90%;
+    }
+}
